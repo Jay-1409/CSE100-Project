@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Finance</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #cdc2c2;
+            background-image: url('your-background-image.jpg'); /* Add your background image URL here */
+            background-size: cover;
+            background-position: center;
+            overflow-x: hidden;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        .dark-mode .btn-toggle {
+            background-color: #292c33;
+            color: #fff;
+        }
+
+        header {
+            background-color: #292c33;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header.bounce {
+            animation: bounce 0.8s ease infinite;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+            color: #f39c12;
+        }
+
+        .main-nav {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-nav li {
+            margin: 0 15px;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        .main-nav a:hover {
+            color: #f39c12;
+        }
+
+        .main-content-header {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .colorchange {
+            color: #f39c12;
+        }
+
+        h1,
+        h2,
+        h3 {
+            transition: transform 0.3s, text-shadow 0.3s;
+        }
+
+        h1:hover,
+        h2:hover,
+        h3:hover {
+            transform: scale(1.1);
+            text-shadow: 0 0 10px #f39c12, 0 0 20px #f39c12;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #4870cd;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #e89797;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #dababa;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            background-color: #f39c12;
+            border: 2px solid #f39c12;
+            font-size: 1.1em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-full {
+            background-color: #292c33;
+            border-color: #292c33;
+        }
+
+        .btn-nav {
+            background-color: #f39c12;
+            border-color: #f39c12;
+        }
+
+        .btn:hover {
+            background-color: #e08311;
+            border-color: #e08311;
+        }
+
+        /* Additional styles for responsiveness */
+        @media only screen and (max-width: 768px) {
+            .row {
+                flex-direction: column;
+            }
+
+            .main-nav {
+                margin-top: 20px;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-5px);
+            }
+            60% {
+                transform: translateY(-2px);
+            }
+        }
+
+        /* Toggle button styles */
+        .btn-toggle {
+            background-color: #fff;
+            color: #292c33;
+            border: none;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .btn-toggle:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="row">
+                <div class="logo">
+                    Finance <br> buddy
+                </div>
+
+                <ul class="main-nav animate__slideInDown">
+                    <!-- <li><a href="joinus.html">JOIN OUR TEAM</a></li> -->
+                    <!-- <li><a href="ourprojects.html">OUR PROJECTS</a></li> -->
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="main-content-header">
+            <h1>
+                Welcome To <span class="colorchange">Modern Finance</span>.<br>
+            </h1>
+            <h3>
+                "Helping you keep track of your money"
+            </h3>
+            <hr>
+            <h2>
+                <p>#Create and allot budget to different categories</p>
+                <p>#Get AI-based suggestions</p>
+                <p>#Get graphical analysis of your spendings weekly, monthly and weekly</p>
+            </h2>
+            <center>
+                <a href="joinus.html" class="btn btn-full" onmouseover="toggleBounce()" onmouseout="toggleBounce()">Sign Up</a>
+                <a href="login.html" class="btn btn-nav" onmouseover="toggleBounce()" onmouseout="toggleBounce()">Log in</a>
+                <!-- <button class="btn-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button> -->
+            </center>
+        </div>
+    </header>
+
+    <script>
+        function toggleBounce() {
+            document.getElementById("header").classList.toggle("bounce");
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+
+</html>

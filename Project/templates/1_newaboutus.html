@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #ccc;
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"%3E%3Crect width="100" height="100" fill="%232c2c2c" /%3E%3Crect x="50" width="50" height="50" fill="%231e1e1e" /%3E%3Crect y="50" width="50" height="50" fill="%231e1e1e" /%3E%3C/svg%3E');
+        }
+
+        header {
+            background-color: #2c2c2c;
+            color: #fff;
+            padding: 20px 0;
+            text-align: left;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .sub-logo {
+            font-size: 1.0em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: right;
+        }
+
+        .main-nav {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-nav li {
+            margin: 0 15px;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        .main-nav a:hover {
+            color: #010e12;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: right;
+            padding: 50px 0;
+        }
+
+        .person-block {
+            width: 300px;
+            height: 400px;
+            background-color: #2c2c2c;
+            border: 1px solid #ccc;
+            margin: 50px auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"%3E%3Crect width="100" height="100" fill="%232c2c2c" /%3E%3Crect x="50" width="50" height="50" fill="%231e1e1e" /%3E%3Crect y="50" width="50" height="50" fill="%231e1e1e" /%3E%3C/svg%3E');
+        }
+
+        .person-block:hover {
+            transform: scale(1.2);
+            z-index: 2;
+        }
+
+        .person-block img {
+            width: 100px;
+            height: 100px;
+            border-radius: 55%;
+            margin: 20px auto;
+            transition: all 0.3s ease;
+        }
+
+        .person-block:hover img {
+            transform: scale(1.5);
+        }
+
+        .person-info {
+            padding: 10px;
+            color: #ccc;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .person-block:hover .person-info {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .person-info h1 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .person-info h2 {
+            font-size: 12px;
+            color: #999;
+        }
+
+        .person-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .person-info li {
+            margin-bottom: 5px;
+        }
+
+        .person-info a img {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .person-info a:hover img {
+            transform: scale(1.2);
+        }
+
+        .person-description {
+            margin-top: 10px;
+            opacity: 1;
+            transition: all 0.3s ease;
+        }
+
+        .person-block:hover .person-description {
+            opacity: 0;
+        }
+        .video-wrapper {
+            max-width: 100%;
+            overflow: hidden;
+            margin-top: 20px;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .video-wrapper iframe {
+            width: 750px;
+            margin-left: 150px;
+            height: 450px;
+            border: none;
+            border-radius: 8px; /* Add border-radius */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    Expense Buddy<br>
+                </div>
+                <div class="sub-logo">
+                    Tracking you for a Good Purpose
+                </div>
+                <b>
+                    <ul class="main-nav animate__slideInDown" style="display: flex;">
+                        <li><a href="index.html" style="padding-left: 800px;">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                    </ul>
+                </b>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container about-section">
+
+        <div class="person-block">
+            <img src="static\styles\images\arth.png" alt="arth's Photo">
+            <div class="person-description">
+                Passionate about coding and exploring new technologies.
+            </div>
+            <div class="person-info">
+                <h1>Arth Patel</h1>
+                <h2>Student at Ahmedabad University</h2>
+                <ul>
+                    <li>Phone: +91 9898555035</li>
+                    <li>Email: arth@outlook.in</li>
+                    <li><a href="https://www.linkedin.com/in/arth-patel-a06377290/"><img src="static\styles\images\linkedin.jpg" alt="linkedin"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="person-block">
+            <img src="static\styles\images\jay1.jpeg" alt="jay's Photo">
+            <div class="person-description">
+                Enthusiastic learner and problem solver.
+            </div>
+            <div class="person-info">
+                <h1>Jay Shah</h1>
+                <h2>Student at Ahmedabad University</h2>
+                <ul>
+                    <li>Phone: +91 9823557662</li>
+                    <li>Email: jay@outlook.in</li>
+                    <li><a href="https://www.linkedin.com/in/jay-shah-8970b5284/"><img src="static\styles\images\linkedin.jpg" alt="linkedin"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="person-block">
+            <img src="static\styles\images\Akshat.jpg" alt="Akshat's Photo">
+            <div class="person-description">
+                Dedicated to learning and applying new concepts.
+            </div>
+            <div class="person-info">
+                <h1>Akshat Patel</h1>
+                <h2>Student at Ahmedabad University</h2>
+                <ul>
+                    <li>Phone: +91 9409090560</li>
+                    <li>Email: akshat@outlook.in</li>
+                    <li><a href="https://www.linkedin.com/in/akshat-patel-9442b5203/"><img src="static\styles\images\linkedin.jpg" alt="linkedin"></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="video-wrapper" style="border-radius: 8px;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2LECa5COVqY?si=PLTz8uPvg-W2gY_N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 8px;"></iframe>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- <html lang="en" style="font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background-color: #1e1e1e; color: #ccc; overflow: hidden; background: repeating-linear-gradient(45deg, #2c3e50, #2c3e50 20px, #34495e 20px, #34495e 40px);"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks For Submitting</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #ccc;
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"%3E%3Crect width="100" height="100" fill="%232c2c2c" /%3E%3Crect x="50" width="50" height="50" fill="%231e1e1e" /%3E%3Crect y="50" width="50" height="50" fill="%231e1e1e" /%3E%3C/svg%3E');
+        }
+
+        header {
+            background-color: #292c33;
+            color: #fff;
+            padding: 20px 0;
+        
+            text-align: left;
+            
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #f39c12;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-nav {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-nav li {
+            margin: 0 15px;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        .main-nav a:hover {
+            color: #f39c12;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .content,
+        .container {
+            text-align: center;
+            transition: transform 0.2s ease-in-out;
+            position: relative;
+        }
+
+        .content:hover,
+        .container:hover {
+            transform: scale(1.3);
+            margin-right: 200px;
+            margin-left: 225px;
+        }
+
+        .content img,
+        .container img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .btn {
+            background-color: #f39c12;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e08311;
+        }
+
+        .money-falling {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: url('static\styles\images\money.jpg') no-repeat center/contain;
+            animation: fallingAnimation 5s linear infinite;
+            z-index: 999;
+        }
+
+        .logout-btn {
+            margin-left: 1000px;
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+
+        .logout-btn:hover {
+            background-color: #c0392b;
+        }   
+
+        .expense-tracker {
+            background-color: #34495e;
+            border: 2px solid #2c3e50;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .expense-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        @keyframes fallingAnimation {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -100px 0;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <div class="logo">
+                    Finance<br>buddy
+                </div>
+                <ul class="main-nav animate__slideInDown">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                </ul>
+                <a href="/" class="logout-btn">Logout</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <div class="content">
+            <a href="http://127.0.0.1:7860/">
+                <img src="static\styles\images\chatbot.png" alt="Chatbot Image">
+            </a>
+            <center><b><a href="http://127.0.0.1:7860/" class="btn">Continue</a></b></center>
+            <div class="money-falling"></div>
+        </div>
+
+        <div class="container">
+            <div class="expense-tracker">
+                <img src="static\styles\images\expense.jpg" height="30px" alt="Expense Image" class="expense-image">
+            </div>
+            <center><b><a href="/home.html" class="btn">Continue</a></b></center>
+            <div class="money-falling"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>

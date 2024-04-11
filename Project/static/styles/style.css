@@ -1,0 +1,74 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.box {
+    max-width: 400px;
+    margin: 10% auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #292c33;
+    transition: color 0.5s;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.5s;
+}
+
+input[type="submit"] {
+    background-color: #292c33;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+input[type="submit"]:hover {
+    background-color: #1f2228;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #111;
+    color: #ccc;
+}
+
+.box.dark-mode {
+    background-color: #292c33;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+h1.dark-mode {
+    color: #fff;
+}
+
+input.dark-mode {
+    border-color: #555;
+}
+
+input[type="submit"].dark-mode {
+    background-color: #555;
+    color: #fff;
+}
+
+input[type="submit"].dark-mode:hover {
+    background-color: #444;
+}
